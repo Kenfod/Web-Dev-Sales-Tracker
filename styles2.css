@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header-section {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+.input-section {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.input-section .form-group {
+    margin-bottom: 1rem;
+}
+
+.input-section .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.input-section .form-group input,
+.input-section .form-group select {
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+.input-section button {
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.sales-summary {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.sales-summary p {
+    font-size: 1.2rem;
+}
