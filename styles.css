@@ -1,9 +1,53 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Verdana, sans-serif;
+    background-color: rgb(37, 243, 237);
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(37, 150, 190);
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.navbar a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand .logo {
+    height: 80px;
+    margin-right: 10px;
+}
+
+.btn-navbar-links {
+    display: inline-block;
+    background-color: rgb(37, 243, 237);
+    color: rgb(12, 1, 1);
+    padding: 10px 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
 
 header {
     background-color: rgb(37, 150, 190);
@@ -12,15 +56,15 @@ header {
     text-align: center;
 }
 
-.navbar .logo {
+/* .navbar .logo {
     font-size: 1.5rem;
     font-weight: bold;
-}
+} */
 
 .header-section {
     text-align: center;
     padding: 2rem;
-    background-color: #f4f4f4;
+    background-color: rgb(37, 243, 237);
 }
 
 .input-section {
@@ -61,3 +105,9 @@ header {
 .sales-summary p {
     font-size: 1.2rem;
 }
+
+
+
+
+
+
