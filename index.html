@@ -19,11 +19,14 @@
             <a href="{{ url_for('logout') }}" class="btn btn-danger">Logout</a>
         </div>
     </nav>
-
-    <section class="header-section">
-        <h1>Jipange Sales Tracker</h1>
-        <p id="date-time"></p>
-    </section>
+    <div class="container">
+        <header>
+            <h1>Welcome to Jipange Tracker,User!</h1>
+            <h3 id="date-time"></h3>
+            <h2>Total Sales: $<span id="totalSales">0.00</span></h2>
+            <h2>Monthly Target: $<span id="monthlyTarget">5000.00</span></h2>
+            <h2>Cumulative Sales: $<span id="cumulativeSales">0.00</span></h2>     
+        </header>
 
     <section class="input-section">
         <form id="salesForm">

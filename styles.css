@@ -1,3 +1,10 @@
+header {
+    /* background-color: rgb(37, 150, 190); */
+    /* color: white; */
+    padding: 1rem 0;
+    text-align: center;
+}
+
 body {
     font-family: Verdana, sans-serif;
     background-color: rgb(37, 243, 237);
@@ -86,12 +93,7 @@ body {
     background-color: #e0a800;
 }
 
-header {
-    background-color: rgb(37, 150, 190);
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
-}
+
 
 /* .navbar .logo {
     font-size: 1.5rem;
