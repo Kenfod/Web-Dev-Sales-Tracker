@@ -12,6 +12,15 @@ body {
     padding: 0;
 }
 
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgb(213, 243, 237);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
 /* Navbar */
 .navbar {
     display: flex;
@@ -94,6 +103,34 @@ body {
 }
 
 
+/* Form Styles */
+form {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-control-lg {
+    padding: 15px;
+    font-size: 1.25rem;
+}
+
+
 
 /* .navbar .logo {
     font-size: 1.5rem;
@@ -122,7 +159,7 @@ body {
 
 .input-section .form-group input,
 .input-section .form-group select {
-    width: 100%;
+    width: 80%;
     padding: 0.5rem;
     box-sizing: border-box;
 }

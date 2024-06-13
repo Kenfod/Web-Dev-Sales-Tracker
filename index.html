@@ -16,7 +16,7 @@
             <a href="#" class="btn btn-navbar-links">Pipelines</a>
             <a href="#" class="btn btn-navbar-links">Incentives</a>
             <a href="#" class="btn btn-navbar-links">Settings</a>
-            <a href="{{ url_for('logout') }}" class="btn btn-danger">Logout</a>
+            <a href="#" class="btn btn-danger">Logout</a>
         </div>
     </nav>
     <div class="container">
@@ -28,49 +28,49 @@
             <h2>Cumulative Sales: $<span id="cumulativeSales">0.00</span></h2>     
         </header>
 
-    <section class="input-section">
-        <form id="salesForm">
-            <div class="form-group">
-                <label for="userName">Your Name:</label>
-                <input type="text" id="userName" required>
-            </div>
-            <div class="form-group">
-                <label for="customerName">Customer Name:</label>
-                <select id="customerName" required>
-                    <option value="">Select Customer</option>
-                    <option value="Customer A">Customer A</option>
-                    <option value="Customer B">Customer B</option>
-                    <option value="Customer C">Customer C</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="productName">Product Name:</label>
-                <select id="productName" required>
-                    <option value="">Select Product</option>
-                    <option value="Product 1" data-price="10.00">Product 1</option>
-                    <option value="Product 2" data-price="20.00">Product 2</option>
-                    <option value="Product 3" data-price="30.00">Product 3</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="productPrice">Product Price:</label>
-                <input type="number" id="productPrice" step="0.01" readonly required>
-            </div>
-            <div class="form-group">
-                <label for="productQuantity">Product Quantity:</label>
-                <input type="number" id="productQuantity" required>
-            </div>
-            <button type="submit">Add Sale</button>
-        </form>
-    </section>
+        <section class="input-section">
+            <form id="form-control">
+                <div class="form-group">
+                    <label for="userName">Your Name:</label>
+                    <input type="text" id="userName" required>
+                </div>
+                <div class="form-group">
+                    <label for="customerName">Customer Name:</label>
+                    <select id="customerName" required>
+                        <option value="">Select Customer</option>
+                        <option value="Customer A">Customer A</option>
+                        <option value="Customer B">Customer B</option>
+                        <option value="Customer C">Customer C</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="productName">Product Name:</label>
+                    <select id="productName" required>
+                        <option value="">Select Product</option>
+                        <option value="Product 1" data-price="10.00">Product 1</option>
+                        <option value="Product 2" data-price="20.00">Product 2</option>
+                        <option value="Product 3" data-price="30.00">Product 3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="productPrice">Product Price:</label>
+                    <input type="number" id="productPrice" step="0.01" readonly required>
+                </div>
+                <div class="form-group">
+                    <label for="productQuantity">Product Quantity:</label>
+                    <input type="number" id="productQuantity" required>
+                </div>
+                    <button type="submit">Add Sale</button>
+            </form>
+        </section>
 
-    <section class="sales-summary">
-        <h2>Sales Summary</h2>
-        <p>Total Sales: $<span id="totalSales">0.00</span></p>
-        <p>Monthly Target: $<span id="monthlyTarget">5000.00</span></p>
-        <p>Cumulative Sales: $<span id="cumulativeSales">0.00</span></p>
-    </section>
-
+        <section class="sales-summary">
+            <h2>Sales Summary</h2>
+            <p>Total Sales: $<span id="totalSales">0.00</span></p>
+            <p>Monthly Target: $<span id="monthlyTarget">5000.00</span></p>
+            <p>Cumulative Sales: $<span id="cumulativeSales">0.00</span></p>
+        </section>
+    </div>   
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="scripts.js"></script>
 </body>
