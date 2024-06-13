@@ -130,23 +130,13 @@ form {
     font-size: 1.25rem;
 }
 
-
-
-/* .navbar .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-} */
-
 .header-section {
     text-align: center;
     padding: 2rem;
     background-color: rgb(37, 243, 237);
 }
 
-.input-section {
-    padding: 2rem;
-    background-color: #fff;
-}
+
 
 .input-section .form-group {
     margin-bottom: 1rem;
@@ -164,15 +154,8 @@ form {
     box-sizing: border-box;
 }
 
-.input-section button {
-    padding: 0.5rem 1rem;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
 
-.sales-summary {
+/* .sales-summary {
     padding: 2rem;
     background-color: #f9f9f9;
     text-align: center;
@@ -180,7 +163,32 @@ form {
 
 .sales-summary p {
     font-size: 1.2rem;
+} */
+
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
 }
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    text-align: left;
+}
+
+table th {
+    background-color: #343a40;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
 
 /* Error Message */
 .error-message {
