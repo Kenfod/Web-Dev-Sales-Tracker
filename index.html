@@ -7,12 +7,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <a class="navbar-brand" href="#"><img src="logo.png" alt="Logo" class="logo">JIPANGE SALES TRACKER - Smart Sales!!</a>
-
+    <nav class="navbar">
+        <a class="navbar-brand" href="#"><img src="logo.png" alt="Logo" class="logo">JIPANGE SALES TRACKER - Smart Sales!!</a>
+        <div class="navbar-links">
+            <a href="/" class="btn btn-navbar-links">Home</a>
+            <a href="#" class="btn btn-navbar-links">Reports</a>
+            <a href="#" class="btn btn-navbar-links">Goals</a>
+            <a href="#" class="btn btn-navbar-links">Pipelines</a>
+            <a href="#" class="btn btn-navbar-links">Incentives</a>
+            <a href="#" class="btn btn-navbar-links">Settings</a>
+            <a href="{{ url_for('logout') }}" class="btn btn-danger">Logout</a>
         </div>
-    </header>
+    </nav>
 
     <section class="header-section">
         <h1>Jipange Sales Tracker</h1>
