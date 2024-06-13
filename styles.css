@@ -1,6 +1,4 @@
 header {
-    /* background-color: rgb(37, 150, 190); */
-    /* color: white; */
     padding: 1rem 0;
     text-align: center;
 }
@@ -102,7 +100,6 @@ body {
     background-color: #e0a800;
 }
 
-
 /* Form Styles */
 form {
     margin-bottom: 20px;
@@ -136,8 +133,6 @@ form {
     background-color: rgb(37, 243, 237);
 }
 
-
-
 .input-section .form-group {
     margin-bottom: 1rem;
 }
@@ -153,18 +148,6 @@ form {
     padding: 0.5rem;
     box-sizing: border-box;
 }
-
-
-/* .sales-summary {
-    padding: 2rem;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.sales-summary p {
-    font-size: 1.2rem;
-} */
-
 
 /* Table Styles */
 table {
@@ -189,7 +172,6 @@ table tr:nth-child(even) {
 }
 
 
-
 /* Error Message */
 .error-message {
     color: #dc3545;
@@ -201,8 +183,3 @@ table tr:nth-child(even) {
     color: red;
     font-weight: bold;
 }
-
-
-
-
-
