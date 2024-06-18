@@ -61,7 +61,6 @@ document.addEventListener("DOMContentLoaded", function () {
         form.reset();
         productPriceInput.value = 0;
     });
-
     // Initialize date and time
     updateDateTime();
     setInterval(updateDateTime, 1000);
