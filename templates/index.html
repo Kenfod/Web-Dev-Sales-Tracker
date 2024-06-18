@@ -25,17 +25,18 @@
             <h3 id="date-time"></h3>
             <h2>Total Sales: $<span id="totalSales">0.00</span></h2>
             <h2>Monthly Target: $<span id="monthlyTarget">5000.00</span></h2>
-            <h2>Cumulative Sales: $<span id="cumulativeSales">0.00</span></h2>     
+            <h2>Cumulative Sales: $<span id="cumulativeSales">0.00</span></h2> 
+            <h2 id="targetBalanceStatus"></h2> <!-- New element for target balance or surplus -->    
         </header>
         <section class="input-section">
-            <form id="form-control">
+            <form id="form-control" action="/add_sale" method="post">
                 <div class="form-group">
                     <label for="userName">User Name:</label>
-                    <input type="text" id="userName" required>
+                    <input type="text" id="userName" name="userName" required>
                 </div>
                 <div class="form-group">
                     <label for="customerName">Customer Name:</label>
-                    <select id="customerName" required>
+                    <select id="customerName" name="customerName" required>
                         <option value="">Select Customer</option>
                         <option value="Customer A">Customer A</option>
                         <option value="Customer B">Customer B</option>
@@ -44,7 +45,7 @@
                 </div>
                 <div class="form-group">
                     <label for="productName">Product Name:</label>
-                    <select id="productName" required>
+                    <select id="productName" name="productName" required>
                         <option value="">Select Product</option>
                         <option value="Product 1" data-price="10.00">Product 1</option>
                         <option value="Product 2" data-price="20.00">Product 2</option>
@@ -53,11 +54,11 @@
                 </div>
                 <div class="form-group">
                     <label for="productPrice">Product Price:</label>
-                    <input type="number" id="productPrice" step="0.01" readonly required>
+                    <input type="number" id="productPrice" name="productPrice" step="0.01" readonly required>
                 </div>
                 <div class="form-group">
                     <label for="productQuantity">Product Quantity:</label>
-                    <input type="number" id="productQuantity" required>
+                    <input type="number" id="productQuantity" name="productQuantity" required>
                 </div>
                     <button type="submit" class="btn btn-primary">Add Sale</button>
             </form>
@@ -88,3 +89,12 @@
     <script src="/static/js/scripts.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+

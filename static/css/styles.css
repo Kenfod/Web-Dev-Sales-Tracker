@@ -183,3 +183,11 @@ table tr:nth-child(even) {
     color: red;
     font-weight: bold;
 }
+
+.text-danger {
+    color: red;
+}
+
+.text-success {
+    color: green;
+}

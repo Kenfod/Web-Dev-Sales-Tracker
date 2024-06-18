@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const cumulativeSalesElement = document.getElementById("cumulativeSales");
     const dateTimeElement = document.getElementById("date-time");
     const salesTableBody = document.getElementById("salesTableBody");
+    const targetBalanceStatusElement = document.getElementById("targetBalanceStatus");
+    const monthlyTarget = 5000.00; // Define the monthly target here
     let totalSales = 0;
     let cumulativeSales = 0;
 
@@ -40,6 +42,9 @@ document.addEventListener("DOMContentLoaded", function () {
         totalSalesElement.textContent = totalSales.toFixed(2);
         cumulativeSalesElement.textContent = cumulativeSales.toFixed(2);
 
+        // Update target balance status
+        updateTargetBalanceStatus();
+
         // Add new sale record to table
         const newRow = document.createElement("tr");
         newRow.innerHTML = `
@@ -51,8 +56,8 @@ document.addEventListener("DOMContentLoaded", function () {
             <td>${totalSale.toFixed(2)}</td>
             <td>${new Date().toLocaleString('en-GB')}</td>
             <td>
-                <button class="btn btn-warning btn-sm">Edit</button>
-                <button class="btn btn-danger btn-sm">Delete</button>
+                <a href="/edit_sale/" class="btn btn-warning btn-sm">Edit</a>
+                <a href="/delete_sale/" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this sale?');">Delete</a>
             </td>
         `;
         salesTableBody.appendChild(newRow);
@@ -61,6 +66,21 @@ document.addEventListener("DOMContentLoaded", function () {
         form.reset();
         productPriceInput.value = 0;
     });
+
+    // Update target balance status
+    function updateTargetBalanceStatus() {
+        const balance = cumulativeSales - monthlyTarget;
+        if (balance < 0) {
+            targetBalanceStatusElement.textContent = `Target Balance: $${(-balance).toFixed(2)}`;
+            targetBalanceStatusElement.classList.remove("text-success");
+            targetBalanceStatusElement.classList.add("text-danger");
+        } else {
+            targetBalanceStatusElement.textContent = `Target Surpassed by: $${balance.toFixed(2)}`;
+            targetBalanceStatusElement.classList.remove("text-danger");
+            targetBalanceStatusElement.classList.add("text-success");
+        }
+    }
+
     // Initialize date and time
     updateDateTime();
     setInterval(updateDateTime, 1000);
